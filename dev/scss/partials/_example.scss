@@ -1,0 +1,23 @@
+
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	
+	height: 100%;
+	@include flex-grid-row();
+	@include flex-align(center, middle);
+
+	.content {
+		
+		text-align: center;
+		@include flex-grid-column(6);
+
+		img {
+			margin: 0 0 20px;
+		}
+
+	}
+}
