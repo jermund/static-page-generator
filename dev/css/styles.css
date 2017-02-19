@@ -893,7 +893,7 @@ html, body {
           margin: 0; }
         .container .footer ul.some-links li img {
           width: 34px; } }
-    @media screen and (max-width: 39.9375em) {
+    @media screen and (min-width: 40em) {
       .container .footer ul.some-links li:not(:last-child) {
         margin-bottom: 10px; } }
 

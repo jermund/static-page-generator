@@ -202,7 +202,7 @@ html, body {
 					}
 				}
 
-				@include breakpoint( small only ) {
+				@include breakpoint( medium up ) {
 					&:not(:last-child) {
 						margin-bottom: 10px;
 					}
