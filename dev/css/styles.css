@@ -3609,4 +3609,56 @@ body {
     .container .content img {
       margin: 0 0 20px; }
 
+@-webkit-keyframes backgroundColor {
+  0% {
+    background: #00bce7; }
+  10% {
+    background: #00bce7; }
+  20% {
+    background: #ef463a; }
+  30% {
+    background: #ef463a; }
+  40% {
+    background: #f27488; }
+  50% {
+    background: #f27488; }
+  60% {
+    background: #fcb515; }
+  70% {
+    background: #fcb515; }
+  80% {
+    background: #6fc9c4; }
+  90% {
+    background: #6fc9c4; }
+  100% {
+    background: #00bce7; } }
+
+@keyframes backgroundColor {
+  0% {
+    background: #00bce7; }
+  10% {
+    background: #00bce7; }
+  20% {
+    background: #ef463a; }
+  30% {
+    background: #ef463a; }
+  40% {
+    background: #f27488; }
+  50% {
+    background: #f27488; }
+  60% {
+    background: #fcb515; }
+  70% {
+    background: #fcb515; }
+  80% {
+    background: #6fc9c4; }
+  90% {
+    background: #6fc9c4; }
+  100% {
+    background: #00bce7; } }
+
+body {
+  -webkit-animation: backgroundColor 20s infinite;
+          animation: backgroundColor 20s infinite; }
+
 /*# sourceMappingURL=styles.css.map */

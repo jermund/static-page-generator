@@ -10,3 +10,29 @@
 
 
 // Take it away
+$bg1: #00bce7;
+$bg2: #ef463a;
+$bg3: #f27488;
+$bg4: #fcb515;
+$bg5: #6fc9c4;
+
+
+@keyframes backgroundColor {
+  0%   { background: $bg1 }
+  10%   { background: $bg1 }
+  20%   { background: $bg2 }
+  30%   { background: $bg2 }
+  40%   { background: $bg3 }
+  50%   { background: $bg3 }
+  60%   { background: $bg4 }
+  70%   { background: $bg4 }
+  80%   { background: $bg5 }
+  90%   { background: $bg5 }
+  100%   { background: $bg1 }
+  
+}
+
+
+body {
+	animation: backgroundColor 20s infinite;
+}

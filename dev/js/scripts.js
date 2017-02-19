@@ -9,17 +9,13 @@ var jerryogconrad = (function(document, $) {
 
     },
 
-
-
     _init = function() {
         _build();
     };
 
     return {
         init: _init
-    }
-
-    
+    };
 
 })(document, jQuery);
 
