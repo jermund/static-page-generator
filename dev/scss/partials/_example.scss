@@ -1,33 +1,36 @@
-$base-color: #00bce7;
-$animation-color1: #ef463a;
-$animation-color2: #f27488;
-$animation-color3: #fcb515;
-$animation-color4: #6fc9c4;
+$bg1: #00bce7;
+$bg2: #ef463a;
+$bg3: #f27488;
+$bg4: #fcb515;
+$bg5: #6fc9c4;
 
 @keyframes changeColorAnimation {
-		  0% 	 { background-color: $base-color; }
-		  25%  { background-color: $animation-color1; }
-		  50%  { background-color: $animation-color2; }
-		  75%  { background-color: $animation-color3; }
-		  100% { background-color: $animation-color4; }
+	  0% { background-color: $bg1; }
+	  15% { background-color: $bg1; }
+	  20% { background-color: $bg2; }
+	  35% { background-color: $bg2; }
+	  40% { background-color: $bg3; }
+	  55% { background-color: $bg3; }
+	  60% { background-color: $bg4; }
+	  75% { background-color: $bg4; }
+	  80% { background-color: $bg5; }
+	  95% { background-color: $bg5; }
+	  100% { background-color: $bg1; }
 }
 
 body, .container, .top-bar {
-	background-color: $base-color;
-	animation: changeColorAnimation 37s;
+	background-color: $bg1;
+	animation: changeColorAnimation 37s infinite;
 }
 
 html, body {
 	height: 100%;
 }
 
-.mobilvideodiv{
-
 #videomobil {
-		//width: 100%;
-		height: 65%;
-		width: 100%;
-}
+	//width: 100%;
+	height: 65%;
+	width: 100%;
 	#mobillink {
 		color: white;
 		font-size: 20px;
