@@ -4,9 +4,7 @@ var jerryogconrad = (function(document, $) {
     'use strict';
 
     var _build = function() {
-        
         console.log('Yo!');
-
     },
 
     _init = function() {
@@ -19,10 +17,9 @@ var jerryogconrad = (function(document, $) {
 
 })(document, jQuery);
 
-
 (function() {
 
     'use strict';
-    jerryogconrad.init();
 
+    jerryogconrad.init();
 })();
