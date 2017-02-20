@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook symbol</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.502887228">
+        <g id="Index-mobile" transform="translate(-181.000000, -803.000000)" fill="#FFFFFF">
+            <g id="Facebook-symbol" transform="translate(181.000000, 803.000000)">
+                <path d="M25.9575,0 L4.042,0 C1.81,0 0,1.81 0,4.0425 L0,25.9575 C0,28.1905 1.81,30 4.042,30 L14.8505,30 L14.8695,19.28 L12.084,19.28 C11.722,19.28 11.428,18.987 11.427,18.625 L11.4135,15.169 C11.412,14.8055 11.707,14.5095 12.0705,14.5095 L14.851,14.5095 L14.851,11.1705 C14.851,7.296 17.2175,5.186 20.674,5.186 L23.5105,5.186 C23.8735,5.186 24.168,5.48 24.168,5.843 L24.168,8.757 C24.168,9.12 23.874,9.414 23.511,9.414 L21.77,9.415 C19.8905,9.415 19.5265,10.308 19.5265,11.619 L19.5265,14.51 L23.657,14.51 C24.051,14.51 24.356,14.8535 24.3095,15.244 L23.9,18.7 C23.861,19.031 23.5805,19.28 23.2475,19.28 L19.545,19.28 L19.5265,30 L25.9575,30 C28.19,30 30,28.1905 30,25.958 L30,4.0425 C30,1.81 28.19,0 25.9575,0" id="fill_1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

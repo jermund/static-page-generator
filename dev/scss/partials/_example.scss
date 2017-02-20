@@ -1,23 +1,135 @@
+$base-color: #00bce7;
+$animation-color1: #ef463a;
+$animation-color2: #f27488;
+$animation-color3: #fcb515;
+$animation-color4: #6fc9c4;
 
-html,
-body {
+@keyframes changeColorAnimation {
+		  0% 	 { background-color: $base-color; }
+		  25%  { background-color: $animation-color1; }
+		  50%  { background-color: $animation-color2; }
+		  75%  { background-color: $animation-color3; }
+		  100% { background-color: $animation-color4; }
+}
+
+body, .container, .top-bar {
+	background-color: $base-color;
+	animation: changeColorAnimation 37s;
+}
+
+html, body {
 	height: 100%;
 }
 
+.mobilvideodiv{
+
+#videomobil {
+		//width: 100%;
+		height: 65%;
+		width: 100%;
+}
+	#mobillink {
+		color: white;
+		font-size: 20px;
+		padding-top: 7%;
+		padding-left: 7%;
+
+	}
+	#mobilsocial {
+		float: right;
+		padding: 1em;
+	}
+
+}
+
+.socialicons {
+	@include breakpoint(small down) {
+		display: none;
+	}
+	display: block;
+	//padding-bottom: 50%;
+	margin-right: 5em;
+	margin-top: -12em;
+	#social {
+		float: right;
+		//padding-left: 5em !important;
+		//position: relative;
+		&:hover {
+			//color: red;
+			opacity: .3;
+
+		}
+		}
+
+	}
+
 .container {
-	
+	@include breakpoint(small down) {
+		display: none;
+	}
+	//@include show-for(medium);
 	height: 100%;
+	.icons{
+		padding-top: 13%;
+		//padding-top: rem-calc(100);
+	}
+
 	@include flex-grid-row();
 	@include flex-align(center, middle);
 
 	.content {
-		
+
+      padding-top: 10%em;
+
+      #phonebox {
+			margin-top: -3.5em;
+			margin:0 auto;
+			position: relative;
+			width: 50%;
+			height: auto;
+		}
+
+		#video{
+			padding: 3.5%;
+			position: relative;
+			z-index: 1;
+			border-radius: 1em;
+			width: 100%;
+		}
+
+		#iphone {
+			margin:0 auto;
+			width: 100%;
+			top: -9.5%;
+			position: absolute;
+			z-index: 0;
+		}
+
 		text-align: center;
 		@include flex-grid-column(6);
 
 		img {
 			margin: 0 0 20px;
 		}
+	}
+}
 
+#topbarstor {
+	@include breakpoint(small down) {
+		display: none;
+	}
+}
+
+.top-bar {
+
+	margin-top: 1em;
+
+	.float-right * {
+			margin-right: 10px;
+	}
+
+	.float-right a {
+			color: white;
+			font-size: 20px;
 	}
 }
