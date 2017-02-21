@@ -32,7 +32,6 @@
 
 		<div class="container">
 
-
 			<div class="header">
 
 				<img src="images/logo.svg" alt="Lavo logo" />
@@ -48,13 +47,26 @@
 			</div>
 
 			<div class="video-wrapper">
+					<div class="mobil-bakgrunn">
+
+						<img id="videoBackground" src="images/Bg.svg" />
+
+						<video id="mobileVideoPlayer">
+							<source src="videos/lavo.mov" type="video/mp4">
+							<source src="videos/lavo.mov" type="video/ogg">
+						</video>
+
+						<div class="ikon">
+									<img type="button" id="playButton" src="images/play-icon.svg" />
+						</div>
+					</div>
 
 				<!-- Denne containeren sentreres i .video-wrapper for >= medium -->
 				<div class="video-container">
 
 					<div class="video">
 						<img src="images/Phone.svg" />
-						<video id="video" autoplay>
+						<video id="videoPlayer" autoplay>
 							<source src="videos/lavo.mov" type="video/mp4">
 							<source src="videos/lavo.mov" type="video/ogg">
 						</video>
@@ -73,8 +85,9 @@
 				<a href="mailto:kontakt@lavoapp.no" class="mailto-link">Kontakt</a>
 
 				<ul class="some-links">
-					<li><a href="#"><img src="images/Instagram-symbol.svg"></a></li>
-					<li><a href="#"><img src="images/Facebook-symbol.svg"></a></li>
+					<li><a href="#"><img src="images/Twitter_symbol.png"></a></li>
+					<li><a href="#"><img src="images/Instagram_symbol.png"></a></li>
+					<li><a href="#"><img src="images/Facebook_symbol.png"></a></li>
 				</ul>
 
 			</div>

@@ -789,8 +789,7 @@ html, body {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        z-index: 99; } }
+        width: 100%; } }
     .container .header .buttons {
       display: none; }
       @media screen and (min-width: 40em) {
@@ -829,6 +828,33 @@ html, body {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; } }
+    .container .video-wrapper .mobil-bakgrunn video {
+      width: 100%; }
+      @media screen and (min-width: 40em) {
+        .container .video-wrapper .mobil-bakgrunn video {
+          display: none; } }
+    .container .video-wrapper .mobil-bakgrunn img {
+      width: 100%; }
+      @media screen and (min-width: 40em) {
+        .container .video-wrapper .mobil-bakgrunn img {
+          display: none; } }
+    .container .video-wrapper .mobil-bakgrunn .ikon img {
+      width: 30%;
+      height: 30%;
+      /*position: absolute;
+					top: 35%;
+					left: 35%;*/
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.6;
+      -webkit-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
+      .container .video-wrapper .mobil-bakgrunn .ikon img:hover {
+        opacity: 1; }
     .container .video-wrapper .video {
       position: relative;
       margin: 0 0 20px; }
@@ -839,9 +865,11 @@ html, body {
             display: inline-block; } }
       .container .video-wrapper .video video {
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        display: none; }
         @media screen and (min-width: 40em) {
           .container .video-wrapper .video video {
+            display: inline;
             position: absolute;
             top: 10.4%;
             left: 5%;
@@ -854,7 +882,7 @@ html, body {
           display: block;
           text-align: center; }
           .container .video-wrapper .app-links a img {
-            opacity: 0.75;
+            opacity: 0.6;
             -webkit-transition: opacity 0.3s;
             transition: opacity 0.3s; }
           .container .video-wrapper .app-links a:hover img {
@@ -876,9 +904,12 @@ html, body {
       right: 40px; } }
   .container .footer .mailto-link {
     line-height: 40px;
-    color: rgba(255, 255, 255, 0.6); }
+    opacity: .6;
+    color: white; }
     .container .footer .mailto-link:hover {
-      color: white; }
+      -webkit-transition: opacity 0.3s;
+      transition: opacity 0.3s;
+      opacity: 1; }
     @media screen and (min-width: 40em) {
       .container .footer .mailto-link {
         display: none; } }
@@ -892,8 +923,20 @@ html, body {
         .container .footer ul.some-links li:last-child {
           margin: 0; }
         .container .footer ul.some-links li img {
-          width: 34px; } }
+          opacity: .6;
+          width: 34px; }
+          .container .footer ul.some-links li img:hover {
+            -webkit-transition: opacity 0.3s;
+            transition: opacity 0.3s;
+            opacity: 1; } }
     @media screen and (min-width: 40em) {
+      .container .footer ul.some-links li img {
+        opacity: .6;
+        width: 34px; }
+        .container .footer ul.some-links li img:hover {
+          -webkit-transition: opacity 0.3s;
+          transition: opacity 0.3s;
+          opacity: 1; }
       .container .footer ul.some-links li:not(:last-child) {
         margin-bottom: 10px; } }
 
