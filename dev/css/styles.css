@@ -790,13 +790,18 @@ html, body {
         top: 0;
         left: 0;
         width: 100%; } }
+    .container .header > img {
+      margin-top: 6px; }
+      @media screen and (min-width: 40em) {
+        .container .header > img {
+          margin-top: 15px; } }
     .container .header .buttons {
       display: none; }
       @media screen and (min-width: 40em) {
         .container .header .buttons {
           display: block;
           position: absolute;
-          top: 25px;
+          top: 35px;
           right: 40px; }
           .container .header .buttons button {
             margin-right: 20px;
