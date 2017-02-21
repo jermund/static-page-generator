@@ -30,73 +30,60 @@
 	</head>
 	<body>
 
-		<div class="show-for-small-only">
-
-			<div class="mobilvideodiv">
-
-				<nav id="mobilbar" class="top-bar">
-					<img src="images/logo.svg" class="float-center"></img>
-				</nav>
-
-				<video id="videomobil" autoplay muted>
-					<source src="videos/lavo.mov" type="video/mp4">
-				</video>
-
-				<div class="fixed-bottom">
-					<nav class="top-bar">
-						<a id="mobillink" href="#">Kontakt</a>
-						<img id="mobilsocial" src="images/Facebook-symbol.svg">
-						<img id="mobilsocial" src="images/Instagram-symbol.svg">
-					</nav>
-				</div>
-				
-			</div>
-
-		</div>
-
-		<nav id="topbarstor" class="top-bar">
-
-			<div class="small-5 medium-5 large-5 columns" style="border: 1px solid transparent;"></div>
-
-			<div class="small-2 medium-2 large-2 columns">
-				<img src="images/logo.svg" class="float-center"></img>
-			</div>
-
-			<div class="small-5 medium-5 large-5 columns">
-				<div class="float-right">
-					<div>
-						<button type="button" id="muteButton">
-							<img src="images/mute-symbol.svg"></img>
-						</button>
-						<a href="#">Kontakt</a>
-					</div>
-				</div>
-			</div>
-		</nav>
-
 		<div class="container">
-			<div class="content">
-				
-				<div id="phonebox">
-					<img src="images/Phone.svg" id="iphone">
-					<video id="video" autoplay>
-						<source src="videos/lavo.mov" type="video/mp4">
-						<source src="videos/lavo.mov" type="video/ogg">
-					</video>
-				</div>
-				<div id="apps">
-					<img class="icons" src="images/APPSTORE-SYMBOL.svg">
-					<img class="icons" src="images/ANDROID-SYMBOL.svg">
+
+			<div class="header">
+
+				<img src="images/logo.svg" alt="Lavo logo" />
+
+				<!-- Vises bare for >= medium -->
+				<div class="buttons">
+					<button type="button" id="muteButton">
+						<img src="images/mute-symbol.svg" />
+					</button>
+					<a href="mailto:kontakt@lavoapp.no">Kontakt</a>
 				</div>
 
 			</div>
-		</div>
 
-		<div class="socialicons">
-			<img id="social" src="images/Instagram-symbol.svg">
-			<br>
-			<br>
-			<img id="social" src="images/Facebook-symbol.svg">
+			<div class="video-wrapper">
+
+				<div class="mobil-container">
+					<button type="button" id="playButton" class="open-video"><img type="button" src="images/play-icon.svg" /></button>
+					<div class="background-image"></div>
+				</div>
+
+				<!-- Denne containeren sentreres i .video-wrapper for >= medium -->
+				<div class="video-container">
+
+					<div class="video">
+						<img src="images/Phone.svg" />
+						<video id="videoPlayer" autoplay loop>
+							<source src="videos/lavo.mov" type="video/mp4">
+							<source src="videos/lavo.mov" type="video/ogg">
+						</video>
+					</div>
+
+					<div class="app-links">
+						<a href="#"><img class="icons" src="images/APPSTORE-SYMBOL.svg"></a>
+						<a href="#"><img class="icons" src="images/ANDROID-SYMBOL.svg"></a>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="footer">
+
+				<!-- Vises bare på mobil -->
+				<a href="mailto:kontakt@lavoapp.no" class="mailto-link">Kontakt</a>
+
+				<ul class="some-links">
+					<li><a href="https://twitter.com" target="_blank"><img src="images/Twitter_symbol.png"></a></li>
+					<li><a href="https://instagram.com" target="_blank"><img src="images/Instagram_symbol.png"></a></li>
+					<li><a href="https://facebook.com" target="_blank"><img src="images/Facebook_symbol.png"></a></li>
+				</ul>
+
+			</div>
 		</div>
 
 		<!-- Development -->

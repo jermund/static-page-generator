@@ -16,14 +16,10 @@ window.onload = function() {
   });
 
   playButton.addEventListener("click", function() {
-    if (mobileVideo.paused === true) {
-
-      background.style.display = "none";
-      playButton.style.visibility = "hidden";
-
-      mobileVideo.play();
-    } else {
-      mobileVideo.pause();
+    
+    if (video.paused === true) {
+      video.play();
     }
+    
   });
 }

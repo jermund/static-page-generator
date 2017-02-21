@@ -828,33 +828,39 @@ html, body {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; } }
-    .container .video-wrapper .mobil-bakgrunn video {
-      width: 100%; }
+    .container .video-wrapper .mobil-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: #000; }
+      .container .video-wrapper .mobil-container .background-image {
+        opacity: 0.25;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/test.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: 1; }
+      .container .video-wrapper .mobil-container button {
+        position: absolute;
+        top: calc( 50% - 20px);
+        left: calc( 50% - 20px);
+        width: 40px;
+        height: 40px;
+        z-index: 2; }
       @media screen and (min-width: 40em) {
-        .container .video-wrapper .mobil-bakgrunn video {
+        .container .video-wrapper .mobil-container {
           display: none; } }
-    .container .video-wrapper .mobil-bakgrunn img {
-      width: 100%; }
+    .container .video-wrapper .video-wrapper {
+      display: none; }
       @media screen and (min-width: 40em) {
-        .container .video-wrapper .mobil-bakgrunn img {
-          display: none; } }
-    .container .video-wrapper .mobil-bakgrunn .ikon img {
-      width: 30%;
-      height: 30%;
-      /*position: absolute;
-					top: 35%;
-					left: 35%;*/
-      position: absolute;
-      margin: auto;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.6;
-      -webkit-transition: opacity 0.3s;
-      transition: opacity 0.3s; }
-      .container .video-wrapper .mobil-bakgrunn .ikon img:hover {
-        opacity: 1; }
+        .container .video-wrapper .video-wrapper {
+          display: block; } }
     .container .video-wrapper .video {
       position: relative;
       margin: 0 0 20px; }
@@ -869,7 +875,7 @@ html, body {
         display: none; }
         @media screen and (min-width: 40em) {
           .container .video-wrapper .video video {
-            display: inline;
+            display: block;
             position: absolute;
             top: 10.4%;
             left: 5%;
