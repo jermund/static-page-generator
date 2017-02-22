@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- meta and title -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lavo</title>
+		<meta name="description" content="">
+		<meta name="author" content="client name">
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<!-- Open Graph tags -->
+		<meta property="fb:app_id" content="" />
+		<meta property="og:site_name" content="" />
+		<meta property="og:image" content="">
+		<meta property="og:locale" content="no_NB" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://www.site.prod" />
+		<meta property="og:title" content="jerry&amp;conrad static page" />
+		<meta property="og:description" content="Static page generator - gulp, browser-sync, jQuery, Foundation Sites" />
+
+		<!-- Twitter tags -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@nytimesbits" />
+		<meta name="twitter:creator" content="@nickbilton" />
+
+	</head>
+	<body>
+
+		<div class="show-for-small-only">
+
+			<div class="mobilvideodiv">
+
+				<nav id="mobilbar" class="top-bar">
+					<img src="images/logo.svg" class="float-center"></img>
+				</nav>
+
+				<video id="videomobil" autoplay muted>
+					<source src="videos/lavo.mov" type="video/mp4">
+				</video>
+
+				<div class="fixed-bottom">
+					<nav class="top-bar">
+						<a id="mobillink" href="#">Kontakt</a>
+						<img id="mobilsocial" src="images/Facebook-symbol.svg">
+						<img id="mobilsocial" src="images/Instagram-symbol.svg">
+					</nav>
+				</div>
+				
+			</div>
+
+		</div>
+
+		<nav id="topbarstor" class="top-bar">
+
+			<div class="small-5 medium-5 large-5 columns" style="border: 1px solid transparent;"></div>
+
+			<div class="small-2 medium-2 large-2 columns">
+				<img src="images/logo.svg" class="float-center"></img>
+			</div>
+
+			<div class="small-5 medium-5 large-5 columns">
+				<div class="float-right">
+					<div>
+						<button type="button" id="muteButton">
+							<img src="images/mute-symbol.svg"></img>
+						</button>
+						<a href="#">Kontakt</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="content">
+				
+				<div id="phonebox">
+					<img src="images/Phone.svg" id="iphone">
+					<video id="video" autoplay>
+						<source src="videos/lavo.mov" type="video/mp4">
+						<source src="videos/lavo.mov" type="video/ogg">
+					</video>
+				</div>
+				<div id="apps">
+					<img class="icons" src="images/APPSTORE-SYMBOL.svg">
+					<img class="icons" src="images/ANDROID-SYMBOL.svg">
+				</div>
+
+			</div>
+		</div>
+
+		<div class="socialicons">
+			<img id="social" src="images/Instagram-symbol.svg">
+			<br>
+			<br>
+			<img id="social" src="images/Facebook-symbol.svg">
+		</div>
+
+		<!-- Development -->
+		<script type="text/javascript" src="/js/build/dependencies.js"></script>
+		<script type="text/javascript" src="/js/scripts.js"></script>
+		<script type="text/javascript" src="/js/video.js"></script>
+
+		<!-- Production -->
+		<!-- <script type="text/javascript" src="/js/app.js" async></script> -->
+
+	</body>
+</html>

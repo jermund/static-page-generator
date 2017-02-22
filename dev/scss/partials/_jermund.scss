@@ -152,27 +152,27 @@ html, body {
 				display: none;
 				@include breakpoint( medium ) {
 					display: inline-block;
-					width: 17em;
+					width: 240px;
 				}
 
 				@include breakpoint( large ) {
 					display: inline-block;
-					width: 20em;
+					width: 260px;
 				}
 
 				@include breakpoint( xlarge ) {
 					display: inline-block;
-					width: 24em;
+					width: 280px;
 				}
 
 				@include breakpoint( xxlarge ) {
 					display: inline-block;
-					width: 28em;
+					width: 300px;
 				}
 
 				@include breakpoint( xxxlarge up) {
 					display: inline-block;
-					width: 30em;
+					width: 320px;
 				}
 
 			}
