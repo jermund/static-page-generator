@@ -899,9 +899,9 @@ html, body {
           .container .video-wrapper .video video {
             display: block;
             position: absolute;
-            top: 10.4%;
-            left: 5%;
-            width: 90%;
+            top: 9.6%;
+            left: 4%;
+            width: 92%;
             height: auto; } }
     .container .video-wrapper .app-links {
       display: none; }
