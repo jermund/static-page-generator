@@ -1,0 +1,265 @@
+
+$bg1: #00bce7;
+$bg2: #ef463a;
+$bg3: #f27488;
+$bg4: #fcb515;
+$bg5: #6fc9c4;
+
+
+@keyframes backgroundColorAnimation {
+	0% { background-color: $bg1; }
+	15% { background-color: $bg1; }
+	20% { background-color: $bg2; }
+	35% { background-color: $bg2; }
+	40% { background-color: $bg3; }
+	55% { background-color: $bg3; }
+	60% { background-color: $bg4; }
+	75% { background-color: $bg4; }
+	70% { background-color: $bg5; }
+	95% { background-color: $bg5; }
+	100% { background-color: $bg1; }
+}
+
+
+body {
+	background-color: $bg1;
+	animation: backgroundColorAnimation 28s infinite;
+}
+
+html, body {
+	position: relative;
+	height: 100%;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+
+
+	.header {
+
+		height: 80px;
+		padding: 20px 0;
+		text-align: center;
+
+		@include breakpoint( medium up ) {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 99;
+		}
+
+
+		.buttons {
+
+			display: none;
+
+			@include breakpoint( medium up ) {
+				display: block;
+				position: absolute;
+				top: 25px;
+				right: 40px;
+
+				button {
+					margin-right: 20px;
+					opacity: 0.6;
+					transition: opacity 0.3s;
+					&:hover,
+					&:focus {
+						opacity: 1;
+						outline: none;
+					}
+				}
+
+				a {
+					color: rgba(255,255,255,0.6);
+					transition: color 0.3s;
+					&:hover {
+						color: rgba(255,255,255,1);
+					}
+				}
+			}
+
+		}
+
+	}
+
+		.video-wrapper {
+
+		// Høyden på containeren på mobil er 100% - høyden på .header + .footer. Justér om nødvendig.
+		height: calc( 100% - 160px );
+		overflow: hidden;
+
+		@include breakpoint( medium ) {
+
+			height: 100%;
+			padding: 100px 0;
+			display: flex;
+			@include flex-align(center, middle);
+
+		}
+
+		.mobil-bakgrunn {
+
+			img {
+				width: 100%;
+
+				@include breakpoint (medium up) {
+					display: none;
+				};
+			}
+			.ikon {
+				img {
+					width: 30%;
+					height: 30%;
+					position: absolute;
+					margin: auto;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					opacity: 0.6;
+					transition: opacity 0.3s;
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		// Video container
+		.video {
+			//display: none;
+			position: relative;
+			margin: 0 0 20px;
+
+			// abgrunnsbildet - bare synlig på mobil
+			img {
+				display: none;
+				@include breakpoint( medium ) {
+					display: inline-block;
+				}
+			}
+
+			// Video - trenger bedre posisjonering på mobil
+			video {
+
+				width: 100%;
+				height: 100%;
+				display: none;
+
+
+				@include breakpoint( medium ) {
+
+					display: inline;
+					position: absolute;
+					top: 10.4%;
+					left: 5%;
+					width: 90%;
+					height: auto;
+				}
+			}
+		}
+
+		// linker til appstore og playstore. Bare synlig >= medium
+		.app-links {
+
+			display: none;
+
+			@include breakpoint( medium up ) {
+				display: block;
+				text-align: center;
+				a {
+					img {
+						opacity: 0.6;
+						transition: opacity 0.3s;
+					}
+					&:hover {
+						img {
+							opacity: 1;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Footer blir container for sosiale medier >= medium
+	.footer {
+
+		@include breakpoint( small only ) {
+			height: 80px;
+			display: flex;
+			justify-content: space-between;
+			padding: 20px;
+		}
+
+		@include breakpoint( medium up ) {
+			position: absolute;
+			bottom: 30px;
+			right: 40px;
+		}
+
+		// Bare synlig på mobil
+		.mailto-link {
+
+			line-height: 40px;
+			opacity: .6;
+			color: white;
+			//color: rgba(255,255,255,0.6);
+			&:hover {
+				transition: opacity 0.3s;
+					opacity: 1;
+				//color: rgba(255,255,255,1);
+			}
+			@include breakpoint( medium up ) {
+				display: none;
+			}
+		}
+
+		// Sosiale medier linker
+		ul.some-links {
+			list-style-type: none;
+			margin: 0;
+			li {
+				//color: rgba(255,255,255,0.6);
+
+				@include breakpoint( small only ) {
+					display: inline-block;
+					margin: 0 14px 0 0;
+					&:last-child {
+						margin: 0;
+					}
+					img {
+						opacity: .6;
+
+						&:hover {
+							transition: opacity 0.3s;
+							opacity: 1;
+							//color: rgba(255,255,255,1);
+						}
+						width: 34px;
+					}
+				}
+
+				@include breakpoint( medium up ) {
+					img {
+						opacity: .6;
+
+						&:hover {
+							transition: opacity 0.3s;
+							opacity: 1;
+							//color: rgba(255,255,255,1);
+						}
+						width: 34px;
+					}
+					&:not(:last-child) {
+						margin-bottom: 10px;
+					}
+				}
+
+			}
+		}
+	}
+}
